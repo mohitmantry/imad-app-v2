@@ -16,7 +16,7 @@ app.get('/os', function (req, res) {
 });
 
 app.get('/cn', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'CN.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'about.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
