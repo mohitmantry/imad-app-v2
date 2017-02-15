@@ -8,15 +8,15 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-app.get('/article1', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article1.html'));
+app.get('/dbms', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'DBMS.html'));
 });
-app.get('/article2', function (req, res) {
-  res.send('ARTICLE 2 REQUESTED AND WILL BE SERVED HERE!!!');
+app.get('/os', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'OS.html'));
 });
 
-app.get('/article3', function (req, res) {
-  res.send('ARTICLE 3 REQUESTED AND WILL BE SERVED HERE!!!');
+app.get('/cn', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'CN.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
